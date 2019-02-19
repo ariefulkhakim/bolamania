@@ -40,10 +40,13 @@ export default class Clubs extends Component {
                 return (
                   <Col xs="12" sm="6">
                     <div className="club-item">
-                      <h3>{datum.name}</h3>
-                      <Button className="button-club" type="button">
+                      <h4>{datum.name}</h4>
+                      <Link
+                        to={'/' + datum.id}
+                        className="button-club"
+                        type="button">
                         Detail
-                      </Button>
+                      </Link>
                     </div>
                   </Col>
                 );

@@ -2,6 +2,11 @@ body {
   font-family: 'Montserrat', sans-serif !important;
 }
 
+ul,
+li {
+  list-style: none;
+}
+
 .navbar {
   padding: 15px !important;
   background-color: #2b2d42 !important;
@@ -107,31 +112,76 @@ button.jumbo-button.btn.btn-secondary {
 /* CLUBS */
 
 .title-club {
-  text-align: center;
   margin-top: 1.2em;
   margin-bottom: 1.5em;
   background-color: #ef233c;
   color: #fff;
   padding-top: 30px;
   padding-bottom: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.title-club h1 {
+  margin-bottom: 0;
 }
 
 .club-item {
   padding: 10px;
   background-color: #2b2b2b;
   margin-bottom: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.club-item h3 {
+.club-item h4 {
   color: #fff;
   padding-top: 10px;
 }
 
 .button-club {
-  position: relative;
-  display: inline-block;
-  float: right;
-  margin-top: -43px;
   background-color: #ef233c !important;
   border-color: transparent !important;
+  padding: 8px 20px;
+  color: #fff;
+}
+
+.button-club:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+.detail-club-arrow {
+  color: #fff;
+  margin-right: 3em;
+}
+
+.detail-club-arrow:hover {
+  color: #fff;
+}
+
+.detail-club-logo,
+.detail-club-item {
+  background-color: #2b2b2b;
+  text-align: center;
+  padding: 40px 0px;
+  margin-bottom: 20px;
+  color: #fff;
+  height: 100%;
+}
+
+.detail-club-item {
+  text-align: left;
+}
+
+.detail-club-logo img {
+  width: 50%;
+}
+
+img.Tottenham.Hotspur.FC {
+  width: 30%;
 }
